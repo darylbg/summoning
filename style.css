@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .eye-container {
+      position: absolute;
+    top: 20px;
+    right: 25px;
+    /* width: 800px; */
+  }
+  
+  .eye-gif {
+    height: 200px;
+    width: auto;
+    position: relative;
+    right: 0;
+    /* float: right; */
+  }
+  
+  .eye-line {
+    height: 0px;
+    /* clip-path: polygon(0 0, 100% 45%, 100% 55%, 0% 100%); */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50%;
+    background-color: #FFB802;
+    box-shadow: -20px 0px 40px 40px #FFB802;
+  }
+
+  
+  
+  .title {
+    color: red;
+    align-self: end;
+  }
+  
+  .blur-test {
+    height: 25px;
+    width: 200px;
+    background-color: yellow;
+    margin: 50px;
+    backdrop-filter: blur(15px);
+  }
+  
+  
