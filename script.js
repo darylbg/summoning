@@ -1,6 +1,7 @@
 const eye = document.getElementById("eye_container");
 const title = document.getElementById("title");
 const eyeLine = document.getElementById("eye_line");
+const gradientLayer = document.getElementById("gradientLayer");
 
 function updateEyeRotationToMouse(e) {
   var rect = eye.getBoundingClientRect();
@@ -14,10 +15,20 @@ function updateEyeRotationToMouse(e) {
   eye.style.transformOrigin = "center center"; // Set the rotation origin to center
 
   // Calculate the distance from the eye origin to the mouse position
-  var distance = Math.sqrt(Math.pow(e.pageX - originX, 2) + Math.pow(e.pageY - originY, 2));
+  var distance = Math.sqrt(
+    Math.pow(e.pageX - originX, 2) + Math.pow(e.pageY - originY, 2)
+  );
 
   // Set the width of the eyeLine
   eyeLine.style.width = distance + "px";
+  //eyeLine.style.width = (originX * 1.5) + "px";
+
+  // Update the gradient based on the mouse position
+  gradientLayer.style.background = `radial-gradient(circle at ${
+    (e.clientX / window.innerWidth) * 100
+  }% ${
+    (e.clientY / window.innerHeight) * 100
+  }%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%)`;
 }
 
 function updateEyeRotationToTitle() {
@@ -36,10 +47,19 @@ function updateEyeRotationToTitle() {
   eye.style.transformOrigin = "center center"; // Set the rotation origin to center
 
   // Calculate the distance from the eye origin to the title position
-  var distance = Math.sqrt(Math.pow(targetCenterX - originX, 2) + Math.pow(targetCenterY - originY, 2));
+  var distance = Math.sqrt(
+    Math.pow(targetCenterX - originX, 2) + Math.pow(targetCenterY - originY, 2)
+  );
 
   // Set the width of the eyeLine
   eyeLine.style.width = distance + "px";
+
+  // Set the gradient initially centered on the title
+  gradientLayer.style.background = `radial-gradient(circle at ${
+    (targetCenterX / window.innerWidth) * 100
+  }% ${
+    (targetCenterY / window.innerHeight) * 100
+  }%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%)`;
 }
 
 // Initial tracking to title

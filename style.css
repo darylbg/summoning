@@ -1,61 +1,96 @@
 body {
-    padding: 0;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    padding: 0;
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .eye-container {
-      position: absolute;
-    top: 20px;
-    right: 25px;
-    /* width: 800px; */
-  }
-  
-  .eye-gif {
-    height: 200px;
-    width: auto;
-    position: relative;
-    right: 0;
-    /* float: right; */
-  }
-  
-  .eye-line {
-    height: 0px;
-    /* clip-path: polygon(0 0, 100% 45%, 100% 55%, 0% 100%); */
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 50%;
-    background-color: #FFB802;
-    box-shadow: -20px 0px 40px 40px #FFB802;
-  }
+.gradient-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 
-  
-  
-  .title {
-    color: red;
-    align-self: end;
-  }
-  
-  .blur-test {
-    height: 25px;
-    width: 200px;
-    background-color: yellow;
-    margin: 50px;
-    backdrop-filter: blur(15px);
-  }
-  
-  
+.gradient-layer {
+  width: 100%;
+  height: 100%;
+  /* background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); */
+  transition: background 0.3s ease;
+}
+
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://media.discordapp.net/attachments/1143149877963005976/1187014177517223986/dazza666_a_scenic_view_of_mordor_from_lord_of_the_rings_dark_br_8c4890fb-3437-47ac-8aba-447d577dff4a.png?ex=65955819&is=6582e319&hm=7a9ebf0fbb8831b980d4db5a1648084bc5cc67a9c90e6cd2752414ac5dd3e6ef&=&format=webp&quality=lossless&width=1065&height=597);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  justify-content: end;
+}
+
+.eye-container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  overflow: visible;
+}
+
+.eye-gif {
+  height: 150px;
+  width: auto;
+  position: relative;
+  right: 0;
+  /* float: right; */
+}
+
+.eye-ball {
+  background-color: #000;
+  height: 60px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  transform: translateY(-50%);
+  /* transform: translateX(50%); */
+}
+
+.eye-line {
+  min-height: 200px;
+  /* box-shadow: -20px 0px 40px 30px #FFB802; */
+  /* clip-path: polygon(0 0, 100% 45%, 100% 55%, 0% 100%); */
+  /* background: linear-gradient(to left, rgba(255, 184, 2, 0.8), transparent); */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 45%;
+  background-image: url(https://media.discordapp.net/attachments/1143149877963005976/1187786154595078255/Rectangle_7_1.png?ex=6598270f&is=6585b20f&hm=81edae934de0813ab8fc8076c5e36f636785061f6ee55c59e547a295454beb86&=&format=webp&quality=lossless&width=1440&height=346);
+  background-position: right -5px center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: visible;
+}
+
+/* box-shadow: -20px 0px 40px 30px #FFB802; */
+
+.title {
+  color: red;
+  align-self: end;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  align-items: start;
+}
+
+.nav ul li {
+  list-style-type: none;
+  font-size: 25px;
+  margin: 10px 0;
+  color: red;
+}

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-  </head>
+</head>
   <body>
-    <div class="container">
+    <div class="home-container">
+      <div class="gradient-container">
+        <div class="gradient-layer" id="gradientLayer"></div>
+      </div>
       <div class="eye-container" id="eye_container">
+        <div class="eye-ball"></div>
         <img
           class="eye-gif"
           id="eye_gif"
@@ -17,8 +21,15 @@
         />
         <div class="eye-line" id="eye_line"></div>
       </div>
+      <div class="nav">
+        <ul>
+          <li>Music</li>
+          <li>Bio</li>
+          <li>News</li>
+          <li>Contact</li>
+        </ul>
+      </div>
       <div class="title" id="title">SUMMONING</div>
-      <div class="blur-test"></div>
     </div>
     <script src="script.js"></script>
   </body>
