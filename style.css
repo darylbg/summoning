@@ -9,7 +9,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
 }
 
 .gradient-layer {
@@ -33,6 +32,9 @@ body {
   position: relative;
   overflow: hidden;
   justify-content: end;
+  /* cursor: crosshair; */
+  /* cursor: none; */
+  cursor: url("ring2_20px.png"), auto;
 }
 
 .eye-container {
@@ -43,7 +45,7 @@ body {
 }
 
 .eye-gif {
-  height: 150px;
+  height: 200px;
   width: auto;
   position: relative;
   right: 0;
@@ -62,7 +64,7 @@ body {
 }
 
 .eye-line {
-  min-height: 200px;
+  height: 300px;
   /* box-shadow: -20px 0px 40px 30px #FFB802; */
   /* clip-path: polygon(0 0, 100% 45%, 100% 55%, 0% 100%); */
   /* background: linear-gradient(to left, rgba(255, 184, 2, 0.8), transparent); */
@@ -71,7 +73,7 @@ body {
   transform: translateY(-50%);
   right: 45%;
   background-image: url(https://media.discordapp.net/attachments/1143149877963005976/1187786154595078255/Rectangle_7_1.png?ex=6598270f&is=6585b20f&hm=81edae934de0813ab8fc8076c5e36f636785061f6ee55c59e547a295454beb86&=&format=webp&quality=lossless&width=1440&height=346);
-  background-position: right -5px center;
+  /* background-position: right -35px center; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: visible;
@@ -94,3 +96,7 @@ body {
   margin: 10px 0;
   color: red;
 }
+
+.nav ul li:hover {
+    color: blue;
+  }

@@ -20,8 +20,8 @@ function updateEyeRotationToMouse(e) {
   );
 
   // Set the width of the eyeLine
-  eyeLine.style.width = distance + "px";
-  //eyeLine.style.width = (originX * 1.5) + "px";
+  eyeLine.style.width = (distance + 100) + "px";
+  eyeLine.style.backgroundPosition = `right ${((distance / 60) * -1)}px center`;
 
   // Update the gradient based on the mouse position
   gradientLayer.style.background = `radial-gradient(circle at ${
@@ -52,7 +52,8 @@ function updateEyeRotationToTitle() {
   );
 
   // Set the width of the eyeLine
-  eyeLine.style.width = distance + "px";
+  eyeLine.style.width = (distance + 100) + "px";
+  eyeLine.style.backgroundPosition = `right ${((distance / 60) * -1)}px center`;
 
   // Set the gradient initially centered on the title
   gradientLayer.style.background = `radial-gradient(circle at ${
