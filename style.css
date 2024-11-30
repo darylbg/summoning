@@ -21,7 +21,7 @@ body {
 .home-container {
   height: 100vh;
   width: 100vw;
-  background-image: url(https://media.discordapp.net/attachments/1143149877963005976/1187014177517223986/dazza666_a_scenic_view_of_mordor_from_lord_of_the_rings_dark_br_8c4890fb-3437-47ac-8aba-447d577dff4a.png?ex=65955819&is=6582e319&hm=7a9ebf0fbb8831b980d4db5a1648084bc5cc67a9c90e6cd2752414ac5dd3e6ef&=&format=webp&quality=lossless&width=1065&height=597);
+  background-image: url("https://media.discordapp.net/attachments/1143149877963005976/1187014177517223986/dazza666_a_scenic_view_of_mordor_from_lord_of_the_rings_dark_br_8c4890fb-3437-47ac-8aba-447d577dff4a.png?ex=674c5b99&is=674b0a19&hm=6a6ca79b9461a20acb60767cd4da5d6eede8ea292a25f40f6a4deb27bc2d44db&=&format=webp&quality=lossless&width=687&height=385");
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   right: 45%;
-  background-image: url(https://media.discordapp.net/attachments/1143149877963005976/1187786154595078255/Rectangle_7_1.png?ex=6598270f&is=6585b20f&hm=81edae934de0813ab8fc8076c5e36f636785061f6ee55c59e547a295454beb86&=&format=webp&quality=lossless&width=1440&height=346);
+  background-image: url("https://media.discordapp.net/attachments/1143149877963005976/1187796656180187177/Wireframe_-_4_3.png?ex=674be897&is=674a9717&hm=64962f88e35f27b2bfe73791b965149493a1064eeee335008a1a8646cd9a01df&=&format=webp&quality=lossless&width=1272&height=571");
   /* background-position: right -35px center; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
